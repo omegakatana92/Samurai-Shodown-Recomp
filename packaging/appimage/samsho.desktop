@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Samurai Shodown
+Comment=Native static recompilation of Samurai Shodown (Neo Geo)
+Exec=samsho
+Icon=samsho
+Categories=Game;ArcadeGame;
+Terminal=false

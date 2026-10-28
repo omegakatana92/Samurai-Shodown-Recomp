@@ -1,0 +1,17 @@
+# Samurai Shodown: insert a credit and start a 1P game.
+# Frame numbers count 59.19 Hz video frames from power-on.
+900 coin
+1000 start
+# Title / mode select / character select advance with A.
+1300 a
+1500 a
+1700 a
+1900 a
+2100 a
+2300 a
+# Opening match: walk in and attack.
+2500-2800 right
+2600 a
+2700 b
+2800 c
+2900 d
