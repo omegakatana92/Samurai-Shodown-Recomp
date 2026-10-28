@@ -19,6 +19,12 @@ measured sessions below **nothing** executed in it.
 No game ROMs or BIOS files are included. Both builds compile the recompiled C
 from *your* dump at build time; the distribution contains no ROM-derived code.
 
+## Download
+
+Prebuilt packages are on the GitHub release:
+
+<https://github.com/omegakatana92/Samurai-Shodown-Recomp/releases/tag/v0.1.0>
+
 ## Status at a glance
 
 | Area | Result |
