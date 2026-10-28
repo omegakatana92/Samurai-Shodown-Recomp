@@ -5,9 +5,9 @@ v0.2.0.
 
 ## Downloads
 
-* `Samurai-Shodown-Windows-x64.zip` - Windows 10/11 x64, SDL2 and VC runtime
+* `Samsho-Windows-x64.zip` - Windows 10/11 x64, SDL2 and VC runtime
   included.
-* `Samurai Shodown-SteamDeck-x86_64.AppImage` - Linux x86_64 / Steam Deck.
+* `Samsho-SteamDeck-x86_64.AppImage` - Linux x86_64 / Steam Deck.
 * `SHA256SUMS.txt` - hashes for both packages.
 
 No game ROMs or BIOS files are included. Unzip your own legally obtained MAME

@@ -51,9 +51,9 @@ Write-Host "== build Release (parallel $Parallel) ==" -ForegroundColor Cyan
 & cmake --build $build --config Release --parallel $Parallel
 if ($LASTEXITCODE -ne 0) { throw 'build failed' }
 
-$exe = @((Join-Path $build 'Release\Samurai Shodown.exe'), (Join-Path $build 'Samurai Shodown.exe')) |
+$exe = @((Join-Path $build 'Release\Samsho.exe'), (Join-Path $build 'Samsho.exe')) |
     Where-Object { Test-Path $_ } | Select-Object -First 1
-if (-not $exe) { throw "Samurai Shodown.exe was not produced under $build" }
+if (-not $exe) { throw "Samsho.exe was not produced under $build" }
 
 if ($Test) {
     Write-Host "== headless smoke test ==" -ForegroundColor Cyan
@@ -64,7 +64,7 @@ if ($Test) {
     if ($code -ne 0) { throw 'headless smoke test failed' }
 }
 
-$dist = Join-Path $root 'dist\windows\Samurai Shodown-Windows-x64'
+$dist = Join-Path $root 'dist\windows\Samsho-Windows-x64'
 if (Test-Path $dist) { Remove-Item -Recurse -Force $dist }
 New-Item -ItemType Directory -Force $dist, (Join-Path $dist 'LICENSES'), (Join-Path $dist 'roms') | Out-Null
 

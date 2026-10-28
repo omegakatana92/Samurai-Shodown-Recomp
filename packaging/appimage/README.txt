@@ -19,8 +19,8 @@ Quick start
 
 2. Make the AppImage executable and run it:
 
-     chmod +x "Samurai Shodown-SteamDeck-x86_64.AppImage"
-     "./Samurai Shodown-SteamDeck-x86_64.AppImage"
+     chmod +x "Samsho-SteamDeck-x86_64.AppImage"
+     "./Samsho-SteamDeck-x86_64.AppImage"
 
    It starts in fullscreen with a 4:3 pillarboxed image.
 
@@ -31,7 +31,7 @@ in the game's launch options.
 If the system has no FUSE 2 runtime (some minimal SteamOS images), run the
 AppImage in extraction mode instead:
 
-     APPIMAGE_EXTRACT_AND_RUN=1 "./Samurai Shodown-SteamDeck-x86_64.AppImage"
+     APPIMAGE_EXTRACT_AND_RUN=1 "./Samsho-SteamDeck-x86_64.AppImage"
 
 Steam Deck
 ----------

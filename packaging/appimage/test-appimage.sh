@@ -7,7 +7,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 ROMS="${1:-$ROOT/roms}"
-APP="$ROOT/dist/steamdeck/Samurai Shodown-SteamDeck-x86_64.AppImage"
+APP="$ROOT/dist/steamdeck/Samsho-SteamDeck-x86_64.AppImage"
 RUN=(env APPIMAGE_EXTRACT_AND_RUN=1 "$APP")
 
 echo "== file =="

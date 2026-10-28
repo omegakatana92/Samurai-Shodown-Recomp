@@ -12,7 +12,7 @@ legally obtained dumps of the MAME "samsho" and "neogeo" sets.
 Quick start
 -----------
 1. Put the unzipped files of both sets in a folder named "roms" next to
-   "Samurai Shodown.exe":
+   "Samsho.exe":
 
      roms\045-p1.p1
      roms\045-pg2.sp2
@@ -25,9 +25,9 @@ Quick start
 
    Prepare-ROMs.ps1 can do this from the two .zip files.
 
-2. Run "Samurai Shodown.exe".  If the ROMs are elsewhere, use:
+2. Run "Samsho.exe".  If the ROMs are elsewhere, use:
 
-     "Samurai Shodown.exe" --rom-path C:\path\to\roms
+     "Samsho.exe" --rom-path C:\path\to\roms
 
 Requirements
 ------------

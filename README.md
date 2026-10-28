@@ -13,8 +13,8 @@ measured sessions below **nothing** executed in it.
 
 | Deliverable | Path | State |
 |---|---|---|
-| Windows x64 | `dist/windows/Samurai Shodown-Windows-x64/` | built and tested |
-| Steam Deck / Linux x86_64 AppImage | `dist/steamdeck/Samurai Shodown-SteamDeck-x86_64.AppImage` | built and tested under Xvfb 1280x800; **not** run on Deck hardware |
+| Windows x64 | `dist/windows/Samsho-Windows-x64/` | built and tested |
+| Steam Deck / Linux x86_64 AppImage | `dist/steamdeck/Samsho-SteamDeck-x86_64.AppImage` | built and tested under Xvfb 1280x800; **not** run on Deck hardware |
 
 No game ROMs or BIOS files are included. Both builds compile the recompiled C
 from *your* dump at build time; the distribution contains no ROM-derived code.
@@ -54,12 +54,12 @@ Full measurements and the test log index: [docs/compatibility.md](docs/compatibi
 powershell -ExecutionPolicy Bypass -File packaging\windows\Prepare-ROMs.ps1
 python scripts\validate-roms.py roms
 powershell -ExecutionPolicy Bypass -File scripts\build-windows.ps1 -RomDir .\roms -Test
-.\build-windows\Release\"Samurai Shodown.exe" --rom-path .\roms
+.\build-windows\Release\"Samsho.exe" --rom-path .\roms
 ```
 
 `scripts\build-windows.ps1` configures with the Visual Studio generator,
 builds Release, optionally runs a headless smoke test with `-Test`, and stages
-`dist\windows\Samurai Shodown-Windows-x64\` with the executable, SDL2, the VC
+`dist\windows\Samsho-Windows-x64\` with the executable, SDL2, the VC
 runtime, README, ROM layout and all licences.
 
 ## Getting started - Steam Deck / Linux
@@ -68,7 +68,7 @@ runtime, README, ROM layout and all licences.
 # ROMs first: unzip samsho.zip and neogeo.zip into ./roms
 python3 scripts/validate-roms.py roms
 ./packaging/appimage/build-appimage.sh ./roms
-"./dist/steamdeck/Samurai Shodown-SteamDeck-x86_64.AppImage"
+"./dist/steamdeck/Samsho-SteamDeck-x86_64.AppImage"
 ```
 
 The AppImage auto-detects `roms/` beside itself (and the usual EmulationStation
@@ -99,7 +99,7 @@ is exactly the layout above. On MVS you must insert a coin before Start works.
 045-p1.p1 + 045-pg2.sp2 --> samsho_recomp (m68krecomp) --> build/generated/*.c
      + sp-s2.sp1           decode, discover, emit C             |
                                                                v
-                   neogeorecomp runtime <-----> Samurai Shodown.exe/.AppImage
+                   neogeorecomp runtime <-----> Samsho.exe/.AppImage
   dispatcher | Musashi fallback | LSPC video | palette | I/O | Z80/YM2610 | SDL2
 ```
 

@@ -1,7 +1,7 @@
 # Testing and measured results
 
 All numbers below are from the Windows Release build unless stated otherwise.
-Commands are shown for PowerShell; on Linux replace `Samurai Shodown.exe` with
+Commands are shown for PowerShell; on Linux replace `Samsho.exe` with
 `build-linux/samsho` and use forward slashes.
 
 ## Environment
@@ -30,7 +30,7 @@ directly from `SAMSHO_ROM_DIR`.
 ## 2. Interpreted boot
 
 ```
-"Samurai Shodown.exe" --headless --interp --rom-path roms --frames 1200 ^
+"Samsho.exe" --headless --interp --rom-path roms --frames 1200 ^
     --screenshot 600:shots/ip-600.png --screenshot 1200:shots/ip-1200.png
 ```
 
@@ -67,7 +67,7 @@ Screens checked: NEO-GEO eyecatcher (600), intro text (1200, 1800), title
 ## 4. Coin, menus and a match
 
 ```
-"Samurai Shodown.exe" --headless --rom-path roms --frames 4000 ^
+"Samsho.exe" --headless --rom-path roms --frames 4000 ^
     --input tests/coin_start.txt ^
     --screenshot 1100:shots/c1100.png --screenshot 1500:shots/c1500.png ^
     --screenshot 2200:shots/c2200.png --screenshot 2800:shots/c2800.png ^
@@ -80,7 +80,7 @@ screen (2200), match with health bars and timer (2800-3999).
 ## 5. Correctness: `--verify`
 
 ```
-"Samurai Shodown.exe" --headless --verify --rom-path roms --frames 2000 ^
+"Samsho.exe" --headless --verify --rom-path roms --frames 2000 ^
     --input tests/coin_start.txt
 [verify] 989214 blocks checked, 0 mismatches
 [exec] native blocks 989214, native instructions 35752234,
@@ -125,7 +125,7 @@ Final table: 16,019 dispatch entries, 241,997 instructions emitted.
 ## 8. Audio
 
 ```
-"Samurai Shodown.exe" --headless --rom-path roms --frames 12000 ^
+"Samsho.exe" --headless --rom-path roms --frames 12000 ^
     --input tests/play_long.txt --wav shots/audio-final.wav
 python tests/analyze_wav.py shots/audio-final.wav
 ```
@@ -147,8 +147,8 @@ is quieter, so only the envelope and timing were compared, not absolute gain.
 ## 9. Windows window
 
 ```
-"Samurai Shodown.exe" --rom-path roms --frames 120 --scale 2
-"Samurai Shodown.exe" --rom-path roms --fullscreen --frames 120
+"Samsho.exe" --rom-path roms --frames 120 --scale 2
+"Samsho.exe" --rom-path roms --fullscreen --frames 120
 ```
 
 Both launched the SDL2 window, rendered frames and exited 0. With

@@ -60,7 +60,7 @@ endif()
 
 add_executable(samsho ${GAME_SOURCES} src/game.c)
 if(WIN32)
-    set_target_properties(samsho PROPERTIES OUTPUT_NAME "Samurai Shodown")
+    set_target_properties(samsho PROPERTIES OUTPUT_NAME "Samsho")
 else()
     set_target_properties(samsho PROPERTIES OUTPUT_NAME "samsho")
 endif()

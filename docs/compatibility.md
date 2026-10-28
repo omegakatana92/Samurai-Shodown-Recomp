@@ -93,7 +93,7 @@ SNK artwork.
 |---|---|
 | Toolchain | MSVC 19.51 (Visual Studio 18 2026), CMake 4.3.3, Release x64 |
 | Build | **built**; 16 generated C files |
-| Package | `dist/windows/Samurai Shodown-Windows-x64/` - exe + SDL2.dll + VC runtime + docs + licences |
+| Package | `dist/windows/Samsho-Windows-x64/` - exe + SDL2.dll + VC runtime + docs + licences |
 | Headless smoke test | **Passed** (1,200 frames) |
 | Full soak, native | **Passed** (19,000 frames, 100.000% native) |
 | `--verify` | **Passed**, 989,214 blocks, 0 mismatches |
@@ -104,7 +104,7 @@ SNK artwork.
 | Item | Result |
 |---|---|
 | Build host | Windows 11 + WSL2, Ubuntu 22.04 x86_64 |
-| Output | `dist/steamdeck/Samurai Shodown-SteamDeck-x86_64.AppImage` (6.9 MB) |
+| Output | `dist/steamdeck/Samsho-SteamDeck-x86_64.AppImage` (6.9 MB) |
 | Headless run | **Passed**, 3,000 frames, 100.000% native, 0 interpreted |
 | `--verify` on AppImage | **Passed**, 1,500 frames, 0 mismatches, 100.000% native |
 | Windowed/fullscreen launch | **Passed** under Xvfb 1280x800 |

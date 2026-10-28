@@ -40,4 +40,4 @@ if ($LASTEXITCODE -ne 0) { throw "Could not extract neogeo.zip with tar" }
 
 Write-Host ""
 Write-Host "Done. Run:" -ForegroundColor Green
-Write-Host "  .\`"Samurai Shodown.exe\`" --rom-path `"$OutDir`""
+Write-Host "  .\`"Samsho.exe\`" --rom-path `"$OutDir`""

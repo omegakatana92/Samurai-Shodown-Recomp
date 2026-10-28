@@ -7,14 +7,14 @@
 #
 # Usage: ./packaging/appimage/build-appimage.sh [ROM_DIR]
 # Default ROM_DIR=$ROOT/roms, output
-# dist/steamdeck/Samurai Shodown-SteamDeck-x86_64.AppImage
+# dist/steamdeck/Samsho-SteamDeck-x86_64.AppImage
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 ROMS="${1:-$ROOT/roms}"
 BUILD="$ROOT/build-linux"
 APPDIR="$BUILD/AppDir"
-OUT="$ROOT/dist/steamdeck/Samurai Shodown-SteamDeck-x86_64.AppImage"
+OUT="$ROOT/dist/steamdeck/Samsho-SteamDeck-x86_64.AppImage"
 
 echo "== configure/build (Release) =="
 cmake -S "$ROOT" -B "$BUILD" -DCMAKE_BUILD_TYPE=Release "-DSAMSHO_ROM_DIR=$ROMS"
