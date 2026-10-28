@@ -31,7 +31,7 @@ Prebuilt packages are on the GitHub release:
 |---|---|
 | ROM validation | 12 game files + 4 BIOS files match MAME by size, CRC32 and SHA1 |
 | Boot | Real MVS BIOS (`sp-s2.sp1`), no BIOS HLE; eyecatcher, intro, attract |
-| Recompiled entry points | **16,019** (15,953 static + 66 from one profile pass) |
+| Recompiled entry points | **16,019** after one profile pass (15,953 from static discovery) |
 | `--verify` (2,000 frames) | **989,214 blocks, 0 mismatches** |
 | Native coverage (19,000-frame soak) | **100.000%**, 0 interpreted instructions, 0 uncovered entries |
 | Native vs interpreter frame | byte-identical PNG at frame 1500 (SHA-256 match) |
